@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Excelsior EMC</title>
+  <meta name="description" content="A photographic and video tribute to a building before it’s gone." />
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title"><a href="index.html">Excelsior EMC</a></h1>
+      <nav aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+        <ul id="nav" class="nav-list">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="gallery.html">Photos</a></li>
+          <li><a href="video.html">Video Tour</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" role="img" aria-label="Historic building exterior">
+    <div class="hero-inner container">
+      <h2>Preserving the memory of a place we loved</h2>
+      <p>Explore photos and a guided video tour capturing the building before it disappears.</p>
+      <div class="hero-cta">
+        <a class="btn" href="gallery.html">View Photo Gallery</a>
+        <a class="btn" href="video.html">Watch the Video Tour</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="container flow">
+    <section class="card">
+      <h3>The Story About The Building</h3>
+      <p><em>Replace this text</em> with a short history of the building: when it was built, what it was used for, and why it mattered to you and the community.</p>
+      <p>Add key dates and anecdotes. Consider including who took the photos and when the video tour was recorded.</p>
+    </section>
+
+    <section class="grid two">
+      <article class="card">
+        <h3>Photos</h3>
+        <p>A curated album of exterior and interior pictures of the former Excelsior EMC building before its decommission.</p>
+        <p><a class="btn small" href="gallery.html">Open Gallery</a></p>
+      </article>
+      <article class="card">
+        <h3>Video Tour</h3>
+        <p>Walk through the former EMC building and its grounds in a full video tour of the building prior to its retirement.</p>
+        <p><a class="btn small" href="video.html">Watch the Tour</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Excelsior EMC • <a href="gallery.html">Photos</a> • <a href="video.html">Video</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

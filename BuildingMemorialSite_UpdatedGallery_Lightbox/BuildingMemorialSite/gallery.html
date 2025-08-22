@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Gallery • Excelsior EMC</title>
+  <meta name="description" content="Photo gallery of the building." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title"><a href="index.html">Excelsior EMC</a></h1>
+      <nav aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+        <ul id="nav" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="gallery.html">Photos</a></li>
+          <li><a href="video.html">Video Tour</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container flow">
+    <h2>Photo Gallery</h2>
+    <p>Here are some pictures taken by our team of the interior of the building and the premises around the building.</p>
+
+    <div class="gallery-grid" role="list" aria-label="Photo gallery">
+      <!-- Repeat these blocks for each photo. Link wraps the image for a no-JS fallback. -->
+      <a class="gallery-item" role="listitem" href="images/interior1.png">
+        <figure>
+          <img loading="lazy" src="images/interior1.png" alt="Front view of the building" />
+          <figcaption>Front view</figcaption>
+        </figure>
+      </a>
+      <a class="gallery-item" role="listitem" href="images/exterior1.png">
+        <figure>
+          <img loading="lazy" src="images/exterior1.png" alt="Lobby with original fixtures" />
+          <figcaption>Lobby</figcaption>
+        </figure>
+      </a>
+      <a class="gallery-item" role="listitem" href="images/exterior2.png">
+        <figure>
+          <img loading="lazy" src="images/exterior2.png" alt="Warehouse view" />
+          <figcaption>Warehouse</figcaption>
+        </figure>
+      </a>
+      <!-- Add more items as needed -->
+    </div>
+  </main>
+
+  <!-- Lightbox modal -->
+  <div class="lightbox" aria-hidden="true" aria-labelledby="lightbox-caption" role="dialog">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous image" title="Previous">&#10094;</button>
+    <img class="lightbox-img" alt="" />
+    <div id="lightbox-caption" class="lightbox-caption" aria-live="polite"></div>
+    <button class="lightbox-next" aria-label="Next image" title="Next">&#10095;</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Excelisor EMC • <a href="index.html">Home</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

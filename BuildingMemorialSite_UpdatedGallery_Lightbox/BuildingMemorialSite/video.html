@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video Tour • The Building Archive</title>
+  <meta name="description" content="Guided video tour of the building." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title"><a href="index.html">Excelsior EMC</a></h1>
+      <nav aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+        <ul id="nav" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Photos</a></li>
+          <li><a class="active" href="video.html">Video Tour</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container flow">
+    <h2>Video Tour</h2>
+    <p>Please enjoy the a full video tour of the former EMC building before its demolition.</p>
+
+    <div class="card">
+      <h3>Option A: Embedded (YouTube)</h3>
+      <div class="video-embed">
+        <!-- Replace VIDEO_ID with your YouTube ID, e.g., https://www.youtube.com/watch?v=gDyvIY4Iomo -->
+        <iframe
+          title="Building video tour"
+          src="https://www.youtube.com/embed/gDyvIY4Iomo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Option B: Self-hosted (MP4)</h3>
+      <video controls preload="metadata" poster="images/hero.jpg" class="video-player">
+        <!-- Place your MP4 at /video/building-tour.mp4; H.264/AAC for broad compatibility -->
+        <source src="video/building-tour.mp4" type="video/mp4" />
+        Your browser does not support the video tag. You can <a href="video/building-tour.mp4">download the video here</a>.
+      </video>
+      <p class="note">Tip: Keep the MP4 under ~500–800 MB for smoother playback; 1080p H.264 is widely supported.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Excelsior EMC • <a href="index.html">Home</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
